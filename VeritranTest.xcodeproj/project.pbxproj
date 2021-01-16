@@ -14,12 +14,12 @@
 		D1A9316C25B343F500563B72 /* DepositsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9316B25B343F500563B72 /* DepositsInteractor.swift */; };
 		D1A9317125B344FD00563B72 /* WithdrawsMoneyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9317025B344FD00563B72 /* WithdrawsMoneyInteractor.swift */; };
 		D1A9317925B3496C00563B72 /* BalanceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9317825B3496C00563B72 /* BalanceInteractor.swift */; };
+		D1A9318525B34B4E00563B72 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9318425B34B4E00563B72 /* RegisterViewController.swift */; };
+		D1A9319425B34E3200563B72 /* UITextField+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9319325B34E3200563B72 /* UITextField+Border.swift */; };
 		D1C1A49E25B2540F00BF20BB /* AccountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1A49D25B2540F00BF20BB /* AccountTest.swift */; };
 		D1C1A4A325B2565500BF20BB /* ClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1A4A225B2565500BF20BB /* ClientTest.swift */; };
 		D1E5158825B2303A001D6CE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5158725B2303A001D6CE9 /* AppDelegate.swift */; };
 		D1E5158A25B2303A001D6CE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5158925B2303A001D6CE9 /* SceneDelegate.swift */; };
-		D1E5158C25B2303A001D6CE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5158B25B2303A001D6CE9 /* ViewController.swift */; };
-		D1E5158F25B2303A001D6CE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E5158D25B2303A001D6CE9 /* Main.storyboard */; };
 		D1E5159125B2303B001D6CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E5159025B2303B001D6CE9 /* Assets.xcassets */; };
 		D1E5159425B2303B001D6CE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E5159225B2303B001D6CE9 /* LaunchScreen.storyboard */; };
 		D1E515AA25B2303B001D6CE9 /* VeritranTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E515A925B2303B001D6CE9 /* VeritranTestUITests.swift */; };
@@ -59,13 +59,13 @@
 		D1A9316B25B343F500563B72 /* DepositsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsInteractor.swift; sourceTree = "<group>"; };
 		D1A9317025B344FD00563B72 /* WithdrawsMoneyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawsMoneyInteractor.swift; sourceTree = "<group>"; };
 		D1A9317825B3496C00563B72 /* BalanceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceInteractor.swift; sourceTree = "<group>"; };
+		D1A9318425B34B4E00563B72 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D1A9319325B34E3200563B72 /* UITextField+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Border.swift"; sourceTree = "<group>"; };
 		D1C1A49D25B2540F00BF20BB /* AccountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTest.swift; sourceTree = "<group>"; };
 		D1C1A4A225B2565500BF20BB /* ClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTest.swift; sourceTree = "<group>"; };
 		D1E5158425B2303A001D6CE9 /* VeritranTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeritranTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E5158725B2303A001D6CE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E5158925B2303A001D6CE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D1E5158B25B2303A001D6CE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D1E5158E25B2303A001D6CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1E5159025B2303B001D6CE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1E5159325B2303B001D6CE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1E5159525B2303B001D6CE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +160,14 @@
 			path = Client;
 			sourceTree = "<group>";
 		};
+		D1A9319225B34E1000563B72 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9319325B34E3200563B72 /* UITextField+Border.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		D1E5157B25B2303A001D6CE9 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +191,7 @@
 		D1E5158625B2303A001D6CE9 /* VeritranTest */ = {
 			isa = PBXGroup;
 			children = (
+				D1A9319225B34E1000563B72 /* extensions */,
 				D1A9318025B34A5400563B72 /* Client */,
 				D1A9317F25B34A4400563B72 /* Bank */,
 				D1A9317E25B34A3300563B72 /* Account */,
@@ -190,11 +199,10 @@
 				D1A9314425B33D6A00563B72 /* Interactors */,
 				D1E5158725B2303A001D6CE9 /* AppDelegate.swift */,
 				D1E5158925B2303A001D6CE9 /* SceneDelegate.swift */,
-				D1E5158B25B2303A001D6CE9 /* ViewController.swift */,
-				D1E5158D25B2303A001D6CE9 /* Main.storyboard */,
 				D1E5159025B2303B001D6CE9 /* Assets.xcassets */,
 				D1E5159225B2303B001D6CE9 /* LaunchScreen.storyboard */,
 				D1E5159525B2303B001D6CE9 /* Info.plist */,
+				D1A9318425B34B4E00563B72 /* RegisterViewController.swift */,
 			);
 			path = VeritranTest;
 			sourceTree = "<group>";
@@ -324,7 +332,6 @@
 			files = (
 				D1E5159425B2303B001D6CE9 /* LaunchScreen.storyboard in Resources */,
 				D1E5159125B2303B001D6CE9 /* Assets.xcassets in Resources */,
-				D1E5158F25B2303A001D6CE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E5158C25B2303A001D6CE9 /* ViewController.swift in Sources */,
 				D1E515C225B2305D001D6CE9 /* AccountType.swift in Sources */,
 				D1E515BF25B2305D001D6CE9 /* Account.swift in Sources */,
 				D1E515C425B2305D001D6CE9 /* ClientType.swift in Sources */,
+				D1A9318525B34B4E00563B72 /* RegisterViewController.swift in Sources */,
 				D1A9315925B340D700563B72 /* BankRepositoryType.swift in Sources */,
 				D1A9317925B3496C00563B72 /* BalanceInteractor.swift in Sources */,
 				D1E5158825B2303A001D6CE9 /* AppDelegate.swift in Sources */,
@@ -364,6 +371,7 @@
 				D1E515C025B2305D001D6CE9 /* Client.swift in Sources */,
 				D1E515C125B2305D001D6CE9 /* AccountError.swift in Sources */,
 				D1A9315425B3401C00563B72 /* BankRepository.swift in Sources */,
+				D1A9319425B34E3200563B72 /* UITextField+Border.swift in Sources */,
 				D1E515C525B2305D001D6CE9 /* Bank.swift in Sources */,
 				D1E5158A25B2303A001D6CE9 /* SceneDelegate.swift in Sources */,
 				D1E515C325B2305D001D6CE9 /* BankType.swift in Sources */,
@@ -404,14 +412,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D1E5158D25B2303A001D6CE9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D1E5158E25B2303A001D6CE9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D1E5159225B2303B001D6CE9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
