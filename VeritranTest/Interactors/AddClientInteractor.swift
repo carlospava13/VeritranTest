@@ -10,7 +10,10 @@ import Foundation
 final class AddClientInteractor: BaseInteractor<ClientType, Void> {
 
     override func useCase(params: ClientType?) -> Result<Void, Error> {
-        repository.addClient(params!)
+        guard let client = params else {
+            return .failure(BankError.NotFoundClient)
+        }
+        repository.addClient(client)
         return .success(())
     }
 }

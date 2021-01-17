@@ -8,7 +8,9 @@
 import Foundation
 
 protocol RegisterPresenterType: PresenterType {
-    
+    func set(id: String)
+    func set(value: Double)
+    func register()
 }
 
 protocol RegisterViewType: ViewType {

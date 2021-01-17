@@ -22,8 +22,10 @@ final class RegisterConfigurator {
         let bank = Bank()
         let repository = BankRepository(bank: bank)
         let interactor = AddClientInteractor(repository: repository)
+        let depositsInteractor = DepositsInteractor(repository: repository)
         return RegisterPresenter.InputDependencies(coodinator: coordinator,
-                                                   addClientInteractor: interactor)
+                                                   addClientInteractor: interactor,
+                                                   depositsInteractor: depositsInteractor)
     }
     
 }
