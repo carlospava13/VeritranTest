@@ -51,7 +51,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
     private func makeCoordinator() -> BaseCoordinator {
-        return RegisterCoordinator(router: MainRouter())
+        let bank = Bank()
+        let repository = BankRepository(bank: bank)
+        return RegisterCoordinator(router: MainRouter(),
+                                   repository: repository)
     }
 
 }

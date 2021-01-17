@@ -22,6 +22,11 @@
 		D125AE7825B3CA0A00E910E7 /* RegisterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7725B3CA0A00E910E7 /* RegisterConfigurator.swift */; };
 		D125AE7D25B3CCA600E910E7 /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7C25B3CCA600E910E7 /* RegisterContract.swift */; };
 		D19CADF425B3D1330029CC09 /* UIViewController+Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */; };
+		D19CADFA25B3D9C70029CC09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CADF925B3D9C70029CC09 /* HomeViewController.swift */; };
+		D19CADFF25B3D9E90029CC09 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CADFE25B3D9E90029CC09 /* HomeCoordinator.swift */; };
+		D19CAE0425B3DA5F0029CC09 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CAE0325B3DA5F0029CC09 /* HomeConfigurator.swift */; };
+		D19CAE0925B3DA8A0029CC09 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CAE0825B3DA8A0029CC09 /* HomePresenter.swift */; };
+		D19CAE0E25B3DA9F0029CC09 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CAE0D25B3DA9F0029CC09 /* HomeContract.swift */; };
 		D1A9314625B33DB400563B72 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9314525B33DB400563B72 /* BaseInteractor.swift */; };
 		D1A9315425B3401C00563B72 /* BankRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9315325B3401C00563B72 /* BankRepository.swift */; };
 		D1A9315925B340D700563B72 /* BankRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9315825B340D700563B72 /* BankRepositoryType.swift */; };
@@ -82,6 +87,11 @@
 		D125AE7725B3CA0A00E910E7 /* RegisterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterConfigurator.swift; sourceTree = "<group>"; };
 		D125AE7C25B3CCA600E910E7 /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
 		D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentable.swift"; sourceTree = "<group>"; };
+		D19CADF925B3D9C70029CC09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D19CADFE25B3D9E90029CC09 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		D19CAE0325B3DA5F0029CC09 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		D19CAE0825B3DA8A0029CC09 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D19CAE0D25B3DA9F0029CC09 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 		D1A9314525B33DB400563B72 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		D1A9315325B3401C00563B72 /* BankRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankRepository.swift; sourceTree = "<group>"; };
 		D1A9315825B340D700563B72 /* BankRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankRepositoryType.swift; sourceTree = "<group>"; };
@@ -177,6 +187,18 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		D19CADF825B3D9B50029CC09 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D19CADF925B3D9C70029CC09 /* HomeViewController.swift */,
+				D19CADFE25B3D9E90029CC09 /* HomeCoordinator.swift */,
+				D19CAE0325B3DA5F0029CC09 /* HomeConfigurator.swift */,
+				D19CAE0825B3DA8A0029CC09 /* HomePresenter.swift */,
+				D19CAE0D25B3DA9F0029CC09 /* HomeContract.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		D1A9314425B33D6A00563B72 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +280,7 @@
 		D1E5158625B2303A001D6CE9 /* VeritranTest */ = {
 			isa = PBXGroup;
 			children = (
+				D19CADF825B3D9B50029CC09 /* Home */,
 				D125AE3925B3C7F100E910E7 /* Coordinator */,
 				D125AE2425B3C6BD00E910E7 /* Base */,
 				D125AE1E25B3C65C00E910E7 /* Register */,
@@ -430,8 +453,10 @@
 				D1E515BF25B2305D001D6CE9 /* Account.swift in Sources */,
 				D1E515C425B2305D001D6CE9 /* ClientType.swift in Sources */,
 				D1A9318525B34B4E00563B72 /* RegisterViewController.swift in Sources */,
+				D19CADFA25B3D9C70029CC09 /* HomeViewController.swift in Sources */,
 				D1A9315925B340D700563B72 /* BankRepositoryType.swift in Sources */,
 				D125AE3525B3C73500E910E7 /* BaseViewController.swift in Sources */,
+				D19CAE0425B3DA5F0029CC09 /* HomeConfigurator.swift in Sources */,
 				D125AE7D25B3CCA600E910E7 /* RegisterContract.swift in Sources */,
 				D125AE5A25B3C84400E910E7 /* CoordinatorType.swift in Sources */,
 				D1A9317925B3496C00563B72 /* BalanceInteractor.swift in Sources */,
@@ -453,10 +478,13 @@
 				D1E515C525B2305D001D6CE9 /* Bank.swift in Sources */,
 				D125AE7325B3C9BC00E910E7 /* RegisterCoordinator.swift in Sources */,
 				D125AE3025B3C6FD00E910E7 /* ViewType.swift in Sources */,
+				D19CADFF25B3D9E90029CC09 /* HomeCoordinator.swift in Sources */,
 				D19CADF425B3D1330029CC09 /* UIViewController+Presentable.swift in Sources */,
 				D125AE5F25B3C86000E910E7 /* RouterType.swift in Sources */,
+				D19CAE0925B3DA8A0029CC09 /* HomePresenter.swift in Sources */,
 				D1E5158A25B2303A001D6CE9 /* SceneDelegate.swift in Sources */,
 				D1E515C325B2305D001D6CE9 /* BankType.swift in Sources */,
+				D19CAE0E25B3DA9F0029CC09 /* HomeContract.swift in Sources */,
 				D125AE6925B3C89B00E910E7 /* Presentable.swift in Sources */,
 				D125AE2B25B3C6F100E910E7 /* BasePresenter.swift in Sources */,
 			);

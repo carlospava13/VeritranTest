@@ -88,5 +88,7 @@ final class RegisterViewController: BaseViewController {
 }
 
 extension RegisterViewController: RegisterViewType {
-    
+    func showHome() {
+        
+    }
 }

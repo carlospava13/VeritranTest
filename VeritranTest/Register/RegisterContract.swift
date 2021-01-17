@@ -14,5 +14,5 @@ protocol RegisterPresenterType: PresenterType {
 }
 
 protocol RegisterViewType: ViewType {
-    
+    func showHome()
 }

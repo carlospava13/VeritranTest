@@ -19,16 +19,20 @@ final class RegisterPresenter: BasePresenter {
     private var value: Double = 0.0
     private var dependencies: InputDependencies
     
+    private var ownView: RegisterViewType! {
+        view as? RegisterViewType
+    }
+    
     init(dependencies: InputDependencies) {
         self.dependencies = dependencies
     }
     
-    func setValue() {
+    private func setValue() {
         let info = DepositsInfo(id: id, value: value)
         let result = dependencies.depositsInteractor.useCase(params: info)
         switch result {
         case .success:
-            break
+            dependencies.coodinator?.showHome(id: id)
         case .failure(let error):
             print(error)
         }
@@ -50,7 +54,6 @@ extension RegisterPresenter: RegisterPresenterType {
         switch result {
         case .success:
             setValue()
-            break
         case .failure(let error):
             print(error)
             break

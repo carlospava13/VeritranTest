@@ -12,15 +12,15 @@ final class RegisterConfigurator {
     static func configure(moduleInput: RegisterConfigurator.ModuleInput) -> UIViewController {
 
         let registerViewController = RegisterViewController()
-        let dependencies = createDependencies(coordinator: moduleInput.coordinator)
+        let dependencies = createDependencies(coordinator: moduleInput.coordinator,
+                                              repository: moduleInput.repository)
         let presenter = RegisterPresenter(dependencies: dependencies)
         registerViewController.presenter = presenter
         return registerViewController
     }
     
-    private static func createDependencies(coordinator: RegisterCoordinatorDelgate?) -> RegisterPresenter.InputDependencies {
-        let bank = Bank()
-        let repository = BankRepository(bank: bank)
+    private static func createDependencies(coordinator: RegisterCoordinatorDelgate?,
+                                           repository: BankRepositoryType) -> RegisterPresenter.InputDependencies {
         let interactor = AddClientInteractor(repository: repository)
         let depositsInteractor = DepositsInteractor(repository: repository)
         return RegisterPresenter.InputDependencies(coodinator: coordinator,
@@ -33,5 +33,6 @@ final class RegisterConfigurator {
 extension RegisterConfigurator {
     struct ModuleInput {
         var coordinator: RegisterCoordinatorDelgate?
+        var repository: BankRepositoryType
     }
 }
