@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RegisterViewController: UIViewController {
+final class RegisterViewController: BaseViewController {
     
     private lazy var idTextField: UITextField = {
         let textField = UITextField()
@@ -24,6 +24,11 @@ final class RegisterViewController: UIViewController {
         textField.setBorder()
         return textField
     }()
+    
+
+    private var ownPresenter: RegisterPresenterType! {
+        presenter as? RegisterPresenterType
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +37,7 @@ final class RegisterViewController: UIViewController {
         view.addSubview(valueTextField)
         setIdTextFieldConstraints()
         setvalueTextFieldConstraints()
+        ownPresenter.bind(self)
     }
     
     private func setIdTextFieldConstraints() {
@@ -52,4 +58,8 @@ final class RegisterViewController: UIViewController {
             valueTextField.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
+}
+
+extension RegisterViewController: RegisterViewType {
+    
 }

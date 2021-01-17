@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D125AE2025B3C66F00E910E7 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE1F25B3C66F00E910E7 /* RegisterPresenter.swift */; };
+		D125AE2625B3C6D000E910E7 /* PresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE2525B3C6D000E910E7 /* PresenterType.swift */; };
+		D125AE2B25B3C6F100E910E7 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE2A25B3C6F100E910E7 /* BasePresenter.swift */; };
+		D125AE3025B3C6FD00E910E7 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE2F25B3C6FD00E910E7 /* ViewType.swift */; };
+		D125AE3525B3C73500E910E7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE3425B3C73500E910E7 /* BaseViewController.swift */; };
+		D125AE3B25B3C80300E910E7 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE3A25B3C80300E910E7 /* BaseCoordinator.swift */; };
+		D125AE5A25B3C84400E910E7 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE5925B3C84400E910E7 /* CoordinatorType.swift */; };
+		D125AE5F25B3C86000E910E7 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE5E25B3C86000E910E7 /* RouterType.swift */; };
+		D125AE6425B3C87A00E910E7 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE6325B3C87A00E910E7 /* MainRouter.swift */; };
+		D125AE6925B3C89B00E910E7 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE6825B3C89B00E910E7 /* Presentable.swift */; };
+		D125AE6E25B3C8B300E910E7 /* RemoveReferenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE6D25B3C8B300E910E7 /* RemoveReferenceDelegate.swift */; };
+		D125AE7325B3C9BC00E910E7 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7225B3C9BC00E910E7 /* RegisterCoordinator.swift */; };
+		D125AE7825B3CA0A00E910E7 /* RegisterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7725B3CA0A00E910E7 /* RegisterConfigurator.swift */; };
+		D125AE7D25B3CCA600E910E7 /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7C25B3CCA600E910E7 /* RegisterContract.swift */; };
+		D19CADF425B3D1330029CC09 /* UIViewController+Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */; };
 		D1A9314625B33DB400563B72 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9314525B33DB400563B72 /* BaseInteractor.swift */; };
 		D1A9315425B3401C00563B72 /* BankRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9315325B3401C00563B72 /* BankRepository.swift */; };
 		D1A9315925B340D700563B72 /* BankRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9315825B340D700563B72 /* BankRepositoryType.swift */; };
@@ -52,6 +67,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D125AE1F25B3C66F00E910E7 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		D125AE2525B3C6D000E910E7 /* PresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterType.swift; sourceTree = "<group>"; };
+		D125AE2A25B3C6F100E910E7 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		D125AE2F25B3C6FD00E910E7 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		D125AE3425B3C73500E910E7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D125AE3A25B3C80300E910E7 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		D125AE5925B3C84400E910E7 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		D125AE5E25B3C86000E910E7 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		D125AE6325B3C87A00E910E7 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		D125AE6825B3C89B00E910E7 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		D125AE6D25B3C8B300E910E7 /* RemoveReferenceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveReferenceDelegate.swift; sourceTree = "<group>"; };
+		D125AE7225B3C9BC00E910E7 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
+		D125AE7725B3CA0A00E910E7 /* RegisterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterConfigurator.swift; sourceTree = "<group>"; };
+		D125AE7C25B3CCA600E910E7 /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
+		D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentable.swift"; sourceTree = "<group>"; };
 		D1A9314525B33DB400563B72 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		D1A9315325B3401C00563B72 /* BankRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankRepository.swift; sourceTree = "<group>"; };
 		D1A9315825B340D700563B72 /* BankRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankRepositoryType.swift; sourceTree = "<group>"; };
@@ -110,6 +140,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D125AE1E25B3C65C00E910E7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9318425B34B4E00563B72 /* RegisterViewController.swift */,
+				D125AE1F25B3C66F00E910E7 /* RegisterPresenter.swift */,
+				D125AE7225B3C9BC00E910E7 /* RegisterCoordinator.swift */,
+				D125AE7725B3CA0A00E910E7 /* RegisterConfigurator.swift */,
+				D125AE7C25B3CCA600E910E7 /* RegisterContract.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D125AE2425B3C6BD00E910E7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D125AE2525B3C6D000E910E7 /* PresenterType.swift */,
+				D125AE2A25B3C6F100E910E7 /* BasePresenter.swift */,
+				D125AE2F25B3C6FD00E910E7 /* ViewType.swift */,
+				D125AE3425B3C73500E910E7 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D125AE3925B3C7F100E910E7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D125AE3A25B3C80300E910E7 /* BaseCoordinator.swift */,
+				D125AE5925B3C84400E910E7 /* CoordinatorType.swift */,
+				D125AE5E25B3C86000E910E7 /* RouterType.swift */,
+				D125AE6325B3C87A00E910E7 /* MainRouter.swift */,
+				D125AE6825B3C89B00E910E7 /* Presentable.swift */,
+				D125AE6D25B3C8B300E910E7 /* RemoveReferenceDelegate.swift */,
+				D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		D1A9314425B33D6A00563B72 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +258,9 @@
 		D1E5158625B2303A001D6CE9 /* VeritranTest */ = {
 			isa = PBXGroup;
 			children = (
+				D125AE3925B3C7F100E910E7 /* Coordinator */,
+				D125AE2425B3C6BD00E910E7 /* Base */,
+				D125AE1E25B3C65C00E910E7 /* Register */,
 				D1A9319225B34E1000563B72 /* extensions */,
 				D1A9318025B34A5400563B72 /* Client */,
 				D1A9317F25B34A4400563B72 /* Bank */,
@@ -202,7 +272,6 @@
 				D1E5159025B2303B001D6CE9 /* Assets.xcassets */,
 				D1E5159225B2303B001D6CE9 /* LaunchScreen.storyboard */,
 				D1E5159525B2303B001D6CE9 /* Info.plist */,
-				D1A9318425B34B4E00563B72 /* RegisterViewController.swift */,
 			);
 			path = VeritranTest;
 			sourceTree = "<group>";
@@ -357,24 +426,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E515C225B2305D001D6CE9 /* AccountType.swift in Sources */,
+				D125AE6425B3C87A00E910E7 /* MainRouter.swift in Sources */,
 				D1E515BF25B2305D001D6CE9 /* Account.swift in Sources */,
 				D1E515C425B2305D001D6CE9 /* ClientType.swift in Sources */,
 				D1A9318525B34B4E00563B72 /* RegisterViewController.swift in Sources */,
 				D1A9315925B340D700563B72 /* BankRepositoryType.swift in Sources */,
+				D125AE3525B3C73500E910E7 /* BaseViewController.swift in Sources */,
+				D125AE7D25B3CCA600E910E7 /* RegisterContract.swift in Sources */,
+				D125AE5A25B3C84400E910E7 /* CoordinatorType.swift in Sources */,
 				D1A9317925B3496C00563B72 /* BalanceInteractor.swift in Sources */,
 				D1E5158825B2303A001D6CE9 /* AppDelegate.swift in Sources */,
 				D1A9314625B33DB400563B72 /* BaseInteractor.swift in Sources */,
 				D1E515C625B2305D001D6CE9 /* BankError.swift in Sources */,
+				D125AE6E25B3C8B300E910E7 /* RemoveReferenceDelegate.swift in Sources */,
+				D125AE7825B3CA0A00E910E7 /* RegisterConfigurator.swift in Sources */,
 				D1A9316125B3423100563B72 /* AddClientInteractor.swift in Sources */,
 				D1A9316C25B343F500563B72 /* DepositsInteractor.swift in Sources */,
 				D1A9317125B344FD00563B72 /* WithdrawsMoneyInteractor.swift in Sources */,
 				D1E515C025B2305D001D6CE9 /* Client.swift in Sources */,
+				D125AE2625B3C6D000E910E7 /* PresenterType.swift in Sources */,
+				D125AE3B25B3C80300E910E7 /* BaseCoordinator.swift in Sources */,
 				D1E515C125B2305D001D6CE9 /* AccountError.swift in Sources */,
 				D1A9315425B3401C00563B72 /* BankRepository.swift in Sources */,
+				D125AE2025B3C66F00E910E7 /* RegisterPresenter.swift in Sources */,
 				D1A9319425B34E3200563B72 /* UITextField+Border.swift in Sources */,
 				D1E515C525B2305D001D6CE9 /* Bank.swift in Sources */,
+				D125AE7325B3C9BC00E910E7 /* RegisterCoordinator.swift in Sources */,
+				D125AE3025B3C6FD00E910E7 /* ViewType.swift in Sources */,
+				D19CADF425B3D1330029CC09 /* UIViewController+Presentable.swift in Sources */,
+				D125AE5F25B3C86000E910E7 /* RouterType.swift in Sources */,
 				D1E5158A25B2303A001D6CE9 /* SceneDelegate.swift in Sources */,
 				D1E515C325B2305D001D6CE9 /* BankType.swift in Sources */,
+				D125AE6925B3C89B00E910E7 /* Presentable.swift in Sources */,
+				D125AE2B25B3C6F100E910E7 /* BasePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
