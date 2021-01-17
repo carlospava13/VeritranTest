@@ -25,10 +25,11 @@ final class HomeConfigurator {
         
         let balanceInteractor = BalanceInteractor(repository: repository)
         let withdrawsMoneyInteractor = WithdrawsMoneyInteractor(repository: repository)
+        let depositsInteractor = DepositsInteractor(repository: repository)
         return HomePresenter.InputDependencies(coodinator: coordinator,
                                                id: id,
                                                balanceInteractor: balanceInteractor,
-                                               withdrawsMoneyInteractor: withdrawsMoneyInteractor)
+                                               withdrawsMoneyInteractor: withdrawsMoneyInteractor, depositsInteractor: depositsInteractor)
     }
     
 }

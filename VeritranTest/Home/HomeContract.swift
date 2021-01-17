@@ -10,6 +10,7 @@ import Foundation
 protocol HomePresenterType: PresenterType {
     func getBalance()
     func withdrawsMoney(value: Double)
+    func depositsMoney(value: Double)
 }
 
 protocol HomeViewType: ViewType {

@@ -14,6 +14,7 @@ final class HomePresenter: BasePresenter {
         var id: String
         var balanceInteractor: BaseInteractor<String, Double>
         var withdrawsMoneyInteractor: BaseInteractor<WithdrawsMoneyInfo,Double>
+        var depositsInteractor: BaseInteractor<DepositsInfo, Void>
     }
     
     private var dependencies: InputDependencies
@@ -41,6 +42,17 @@ extension HomePresenter: HomePresenterType {
     func withdrawsMoney(value: Double) {
         let info = WithdrawsMoneyInfo(id: dependencies.id, value: value)
         let result = dependencies.withdrawsMoneyInteractor.useCase(params: info)
+        switch result {
+        case .success:
+            getBalance()
+        case .failure(let error):
+            dependencies.coodinator?.showAlert(error: error)
+        }
+    }
+    
+    func depositsMoney(value: Double) {
+        let info = DepositsInfo(id: dependencies.id, value: value)
+        let result = dependencies.depositsInteractor.useCase(params: info)
         switch result {
         case .success:
             getBalance()

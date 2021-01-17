@@ -20,6 +20,7 @@ final class HomeViewController: BaseViewController {
         let textField = UITextField()
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.placeholder = "withdraws Money"
+        textField.keyboardType = .numberPad
         textField.setBorder()
         return textField
     }()
@@ -29,6 +30,24 @@ final class HomeViewController: BaseViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("withdraws money", for: .normal)
         button.addTarget(self, action: #selector(onWithdrawsMoney), for: .touchUpInside)
+        button.backgroundColor = .blue
+        return button
+    }()
+    
+    private lazy var depositsTextField: UITextField = {
+        let textField = UITextField()
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.placeholder = "deposits Money"
+        textField.keyboardType = .numberPad
+        textField.setBorder()
+        return textField
+    }()
+    
+    private lazy var depositsMoneyButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("deposits money", for: .normal)
+        button.addTarget(self, action: #selector(onDepositsMoney), for: .touchUpInside)
         button.backgroundColor = .blue
         return button
     }()
@@ -43,9 +62,13 @@ final class HomeViewController: BaseViewController {
         view.addSubview(balanceLabel)
         view.addSubview(withdrawsMoneyTextField)
         view.addSubview(withdrawsMoneyButton)
+        view.addSubview(depositsTextField)
+        view.addSubview(depositsMoneyButton)
         setBalanceLabelConstraints()
         setWithdrawsMoneyTextFieldConstraints()
         setWithdrawsMoneyButtonConstraints()
+        setDepositsTextFieldConstraints()
+        setDepositsMoneyButtonConstraints()
         ownPresenter.bind(self)
         ownPresenter.getBalance()
     }
@@ -79,8 +102,30 @@ final class HomeViewController: BaseViewController {
         ])
     }
     
+    private func setDepositsTextFieldConstraints() {
+        NSLayoutConstraint.activate([
+            depositsTextField.topAnchor.constraint(equalTo: withdrawsMoneyButton.bottomAnchor, constant: 10),
+            depositsTextField.leadingAnchor.constraint(equalTo: withdrawsMoneyTextField.leadingAnchor),
+            depositsTextField.trailingAnchor.constraint(equalTo: withdrawsMoneyTextField.trailingAnchor),
+            depositsTextField.heightAnchor.constraint(equalToConstant: 60)
+        ])
+    }
+    
+    private func setDepositsMoneyButtonConstraints() {
+        NSLayoutConstraint.activate([
+            depositsMoneyButton.topAnchor.constraint(equalTo: depositsTextField.bottomAnchor, constant: 10),
+            depositsMoneyButton.leadingAnchor.constraint(equalTo: withdrawsMoneyTextField.leadingAnchor),
+            depositsMoneyButton.trailingAnchor.constraint(equalTo: withdrawsMoneyTextField.trailingAnchor),
+            depositsMoneyButton.heightAnchor.constraint(equalToConstant: 60)
+        ])
+    }
+    
     @objc func onWithdrawsMoney() {
         ownPresenter.withdrawsMoney(value: Double(withdrawsMoneyTextField.text!)!)
+    }
+    
+    @objc func onDepositsMoney() {
+        ownPresenter.depositsMoney(value: Double(depositsTextField.text!)!)
     }
 }
 
