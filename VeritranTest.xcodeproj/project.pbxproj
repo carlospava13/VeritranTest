@@ -21,6 +21,11 @@
 		D125AE7325B3C9BC00E910E7 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7225B3C9BC00E910E7 /* RegisterCoordinator.swift */; };
 		D125AE7825B3CA0A00E910E7 /* RegisterConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7725B3CA0A00E910E7 /* RegisterConfigurator.swift */; };
 		D125AE7D25B3CCA600E910E7 /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125AE7C25B3CCA600E910E7 /* RegisterContract.swift */; };
+		D13E04D725B48E34001133C9 /* RegisterPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E04D625B48E34001133C9 /* RegisterPresenterTest.swift */; };
+		D13E04E125B48E98001133C9 /* AddClientInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E04E025B48E98001133C9 /* AddClientInteractorStub.swift */; };
+		D13E04EA25B48F11001133C9 /* ClientDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E04E925B48F11001133C9 /* ClientDummy.swift */; };
+		D13E04F225B48F52001133C9 /* AccountDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E04F125B48F52001133C9 /* AccountDummy.swift */; };
+		D13E04F725B49043001133C9 /* DepositsInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13E04F625B49043001133C9 /* DepositsInteractorStub.swift */; };
 		D19CADF425B3D1330029CC09 /* UIViewController+Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */; };
 		D19CADFA25B3D9C70029CC09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CADF925B3D9C70029CC09 /* HomeViewController.swift */; };
 		D19CADFF25B3D9E90029CC09 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19CADFE25B3D9E90029CC09 /* HomeCoordinator.swift */; };
@@ -52,6 +57,9 @@
 		D1E515C525B2305D001D6CE9 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E515BD25B2305D001D6CE9 /* Bank.swift */; };
 		D1E515C625B2305D001D6CE9 /* BankError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E515BE25B2305D001D6CE9 /* BankError.swift */; };
 		D1E515CF25B2308E001D6CE9 /* BankTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E515CE25B2308E001D6CE9 /* BankTest.swift */; };
+		D1EB4F6B25B492E900AAC26B /* RegisterCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB4F6A25B492E900AAC26B /* RegisterCoordinatorSpy.swift */; };
+		D1EB4F7125B4931F00AAC26B /* BaseCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB4F7025B4931F00AAC26B /* BaseCoordinatorSpy.swift */; };
+		D1EB4F7925B493DE00AAC26B /* BankRespositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EB4F7825B493DE00AAC26B /* BankRespositoryStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +94,11 @@
 		D125AE7225B3C9BC00E910E7 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		D125AE7725B3CA0A00E910E7 /* RegisterConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterConfigurator.swift; sourceTree = "<group>"; };
 		D125AE7C25B3CCA600E910E7 /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
+		D13E04D625B48E34001133C9 /* RegisterPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenterTest.swift; sourceTree = "<group>"; };
+		D13E04E025B48E98001133C9 /* AddClientInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientInteractorStub.swift; sourceTree = "<group>"; };
+		D13E04E925B48F11001133C9 /* ClientDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDummy.swift; sourceTree = "<group>"; };
+		D13E04F125B48F52001133C9 /* AccountDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDummy.swift; sourceTree = "<group>"; };
+		D13E04F625B49043001133C9 /* DepositsInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositsInteractorStub.swift; sourceTree = "<group>"; };
 		D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentable.swift"; sourceTree = "<group>"; };
 		D19CADF925B3D9C70029CC09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D19CADFE25B3D9E90029CC09 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
@@ -123,6 +136,9 @@
 		D1E515BD25B2305D001D6CE9 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		D1E515BE25B2305D001D6CE9 /* BankError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankError.swift; sourceTree = "<group>"; };
 		D1E515CE25B2308E001D6CE9 /* BankTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankTest.swift; sourceTree = "<group>"; };
+		D1EB4F6A25B492E900AAC26B /* RegisterCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinatorSpy.swift; sourceTree = "<group>"; };
+		D1EB4F7025B4931F00AAC26B /* BaseCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorSpy.swift; sourceTree = "<group>"; };
+		D1EB4F7825B493DE00AAC26B /* BankRespositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankRespositoryStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +201,45 @@
 				D19CADF325B3D1330029CC09 /* UIViewController+Presentable.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		D13E04D525B48E1B001133C9 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				D1EB4F6F25B4931000AAC26B /* Spy */,
+				D13E04E825B48F04001133C9 /* Dummy */,
+				D13E04DF25B48E7B001133C9 /* Stubs */,
+				D13E04DE25B48E6E001133C9 /* Register */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		D13E04DE25B48E6E001133C9 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				D13E04D625B48E34001133C9 /* RegisterPresenterTest.swift */,
+				D1EB4F6A25B492E900AAC26B /* RegisterCoordinatorSpy.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		D13E04DF25B48E7B001133C9 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				D13E04E025B48E98001133C9 /* AddClientInteractorStub.swift */,
+				D13E04F625B49043001133C9 /* DepositsInteractorStub.swift */,
+				D1EB4F7825B493DE00AAC26B /* BankRespositoryStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		D13E04E825B48F04001133C9 /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				D13E04E925B48F11001133C9 /* ClientDummy.swift */,
+				D13E04F125B48F52001133C9 /* AccountDummy.swift */,
+			);
+			path = Dummy;
 			sourceTree = "<group>";
 		};
 		D19CADF825B3D9B50029CC09 /* Home */ = {
@@ -302,6 +357,7 @@
 		D1E5159D25B2303B001D6CE9 /* VeritranTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				D13E04D525B48E1B001133C9 /* Presenters */,
 				D1E515A025B2303B001D6CE9 /* Info.plist */,
 				D1E515CE25B2308E001D6CE9 /* BankTest.swift */,
 				D1C1A49D25B2540F00BF20BB /* AccountTest.swift */,
@@ -317,6 +373,14 @@
 				D1E515AB25B2303B001D6CE9 /* Info.plist */,
 			);
 			path = VeritranTestUITests;
+			sourceTree = "<group>";
+		};
+		D1EB4F6F25B4931000AAC26B /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				D1EB4F7025B4931F00AAC26B /* BaseCoordinatorSpy.swift */,
+			);
+			path = Spy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,9 +558,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EB4F6B25B492E900AAC26B /* RegisterCoordinatorSpy.swift in Sources */,
 				D1C1A4A325B2565500BF20BB /* ClientTest.swift in Sources */,
+				D1EB4F7125B4931F00AAC26B /* BaseCoordinatorSpy.swift in Sources */,
 				D1C1A49E25B2540F00BF20BB /* AccountTest.swift in Sources */,
 				D1E515CF25B2308E001D6CE9 /* BankTest.swift in Sources */,
+				D1EB4F7925B493DE00AAC26B /* BankRespositoryStub.swift in Sources */,
+				D13E04F725B49043001133C9 /* DepositsInteractorStub.swift in Sources */,
+				D13E04D725B48E34001133C9 /* RegisterPresenterTest.swift in Sources */,
+				D13E04E125B48E98001133C9 /* AddClientInteractorStub.swift in Sources */,
+				D13E04EA25B48F11001133C9 /* ClientDummy.swift in Sources */,
+				D13E04F225B48F52001133C9 /* AccountDummy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,80 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "787C8050-4D1B-40C5-9CEB-39994319A614"
+            uuid = "9D841E9E-3011-4484-8144-CCB3E4788154"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VeritranTestTests/AccountStub.swift"
+            filePath = "VeritranTest/Register/RegisterPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "withdrawsMoney(value:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "register()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D548C7E2-FE73-4232-AD56-18075E3A810C"
+            uuid = "0071A98E-19D2-4DD3-8E92-8847B92305C1"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VeritranTestTests/AccountStub.swift"
+            filePath = "VeritranTest/Register/RegisterPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "withdrawsMoney(value:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "setValue()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "203B97E2-CA4F-4A79-BE89-C9FFBB2F8FDF"
+            uuid = "40D64553-3729-4262-9AEA-4B72287E90FE"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VeritranTestTests/AccountStub.swift"
+            filePath = "VeritranTest/Register/RegisterPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "withdrawsMoney(value:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D241F411-96D0-4351-933E-699BBBCA899C"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VeritranTest/Interactors/DepositsInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "useCase(params:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9FBC928C-E94D-4FB3-AB7A-B49898076E41"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VeritranTest/Interactors/DepositsInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "useCase(params:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "setValue()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
