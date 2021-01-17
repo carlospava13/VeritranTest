@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RegisterCoordinatorDelgate {
+protocol RegisterCoordinatorDelgate: BaseCoordinatorType {
     func showHome(id: String)
 }
 

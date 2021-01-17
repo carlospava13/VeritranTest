@@ -12,7 +12,8 @@ final class HomePresenter: BasePresenter {
     struct InputDependencies {
         var coodinator: HomeCoordinatorDelegate?
         var id: String
-        var balanceInteractor: BaseInteractor<String, Double> 
+        var balanceInteractor: BaseInteractor<String, Double>
+        var withdrawsMoneyInteractor: BaseInteractor<WithdrawsMoneyInfo,Double>
     }
     
     private var dependencies: InputDependencies
@@ -33,7 +34,18 @@ extension HomePresenter: HomePresenterType {
         case .success(let balance):
             ownView.set(balance: String(balance))
         case .failure(let error):
-            print(error)
+            dependencies.coodinator?.showAlert(error: error)
+        }
+    }
+    
+    func withdrawsMoney(value: Double) {
+        let info = WithdrawsMoneyInfo(id: dependencies.id, value: value)
+        let result = dependencies.withdrawsMoneyInteractor.useCase(params: info)
+        switch result {
+        case .success:
+            getBalance()
+        case .failure(let error):
+            dependencies.coodinator?.showAlert(error: error)
         }
     }
 }

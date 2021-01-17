@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HomeCoordinatorDelegate {
+protocol HomeCoordinatorDelegate: BaseCoordinatorType {
 
 }
 

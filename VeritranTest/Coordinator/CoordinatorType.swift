@@ -11,4 +11,5 @@ protocol CoordinatorType: AnyObject {
     var childCoordinators: [CoordinatorType] { get set }
     var router: RouterType { get }
     func start()
+    func showAlert(error: Error)
 }

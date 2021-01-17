@@ -34,7 +34,7 @@ final class RegisterPresenter: BasePresenter {
         case .success:
             dependencies.coodinator?.showHome(id: id)
         case .failure(let error):
-            print(error)
+            dependencies.coodinator?.showAlert(error: error)
         }
     }
 }
@@ -55,8 +55,7 @@ extension RegisterPresenter: RegisterPresenterType {
         case .success:
             setValue()
         case .failure(let error):
-            print(error)
-            break
+            dependencies.coodinator?.showAlert(error: error)
         }
     }
 }

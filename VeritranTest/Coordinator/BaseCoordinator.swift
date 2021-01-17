@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol BaseCoordinatorType {
+    func showAlert(error: Error)
+}
+
 class BaseCoordinator: CoordinatorType {
     
     var childCoordinators: [CoordinatorType] = []
@@ -42,3 +46,10 @@ class BaseCoordinator: CoordinatorType {
     }
 }
 
+extension BaseCoordinator: BaseCoordinatorType {
+    func showAlert(error: Error) {
+        let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        router.present(alertController)
+    }
+}
